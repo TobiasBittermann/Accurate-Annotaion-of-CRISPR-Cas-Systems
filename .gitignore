@@ -1,0 +1,16 @@
+# Ignoriere alle Log-Dateien
+*.log
+
+# Optional: Ignoriere temporäre Dateien
+*.tmp
+*.bak
+
+# Ignoriere bestimmte Verzeichnisse (z.B. Ergebnisse oder große Daten)
+Results_datasets/big/output_CRISPR-Cas_Atlas/hmmsearch/HMM2025/
+Results_datasets/small/output_CRISPR-Cas_Atlas/hmmsearch/HMM2025/
+
+# Node / Python / System-spezifische Dateien (optional)
+__pycache__/
+*.pyc
+.DS_Store
+
