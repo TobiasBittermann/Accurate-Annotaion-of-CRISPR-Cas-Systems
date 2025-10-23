@@ -4,6 +4,11 @@
 #Ignore Databases
 DB/
 
+#Ignore Folder
+/FASTA
+/DataModel
+/HEADERS
+
 # Optional: Ignoriere temporäre Dateien
 *.tmp
 *.bak
