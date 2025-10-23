@@ -2,6 +2,7 @@
 
 from Helper import format_fasta
 from Helper import merge_fasta
+from Helper import filter_faa_casette_CSV
 from Annotater import annotate_NCBI
 from pathlib import Path
 import time
@@ -15,7 +16,20 @@ def main():
     dataset_big_folder = "DataModel/big"
 
     # =============================================================================
-    # SECTION 1: ANNOTATE AND SUBTYPE FASTA FILES
+    # SECTION 1: FILTER FASTA FILES ACCORDING TO CASSETTE CSV
+    # =============================================================================
+    if(True):
+        #Small DataModel
+        fasta_folder = f"../{data_folder}/NCBI/2_NCBI_Processed/"
+        csv_file = f"../{data_folder}/NCBI/Complete_Cassette_summary.csv"
+        output_dir = f"../{temp_folder}/NCBI/3_NCBI_Filtered/"
+
+        # Call function once with the entire folder (not per file)
+        filter_faa_casette_CSV.filter_faa_casette_CSV(csv_file, fasta_folder, output_dir)
+
+
+    # =============================================================================
+    # SECTION 2: ANNOTATE AND SUBTYPE FASTA FILES
     # =============================================================================
     if(True):
         #Small DataModel
@@ -35,7 +49,7 @@ def main():
             annotate_NCBI.process_fasta_file(fasta_file, csv_file, output_dir)
 
     # =============================================================================
-    # SECTION 2: MERGE ANNOTATED FASTA FILES
+    # SECTION 3: MERGE ANNOTATED FASTA FILES
     # =============================================================================
     if(True):
         #Small DataModel
@@ -65,7 +79,7 @@ def main():
         print(f"Merged FASTA files saved to {output_file}")
 
     # =============================================================================
-    # SECTION 3: FORMAT AND STANDARDIZE FINAL FASTA FILE
+    # SECTION 4: FORMAT AND STANDARDIZE FINAL FASTA FILE
     # =============================================================================
     if(True):
         #Small DataModel
