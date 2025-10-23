@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-import format_fasta
-import merge_fasta
+from Helper import format_fasta
+from Helper import merge_fasta
 import annotate_NCBI
 from pathlib import Path
 import time

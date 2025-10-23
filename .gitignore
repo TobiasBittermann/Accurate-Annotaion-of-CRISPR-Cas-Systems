@@ -1,6 +1,9 @@
 # Ignoriere alle Log-Dateien
 *.log
 
+#Ignore Databases
+DB/
+
 # Optional: Ignoriere temporäre Dateien
 *.tmp
 *.bak

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-import format_fasta
+from Helper import format_fasta
 import annotate_uniprot
-import filter_uniprot
+from Helper import filter_uniprot
 from pathlib import Path
 import time
 

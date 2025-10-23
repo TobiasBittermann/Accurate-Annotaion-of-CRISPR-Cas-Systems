@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-import format_fasta
-import merge_fasta
-import filter_JSON
-import json_to_fasta
-import filter_JSON_FASTA
+from Helper import format_fasta
+from Helper import merge_fasta
+from Helper import filter_JSON
+from Helper import json_to_fasta
+from Helper import filter_JSON_FASTA
 import annotate_CRISPRCas_Atlas
 from pathlib import Path
 import time

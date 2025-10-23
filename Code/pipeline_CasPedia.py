@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-import format_fasta
-import merge_fasta
-import cas_translator as cas_translator
+from Helper import format_fasta
+from Helper import merge_fasta
+from Helper import cas_translator
 import annotate_CasPedia
 from pathlib import Path
 import time
