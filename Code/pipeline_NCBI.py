@@ -33,7 +33,7 @@ def main():
     # =============================================================================
     if(True):
         #Small DataModel
-        fasta_folder = f"../{data_folder}/NCBI/3_NCBI_Filtered/"
+        fasta_folder = f"../{temp_folder}/NCBI/3_NCBI_Filtered/"
         csv_file = f"../{data_folder}/NCBI/Complete_Cassette_summary.csv"
         output_dir = f"../{temp_folder}/NCBI/4.1_NCBI_subtyped/"
 
