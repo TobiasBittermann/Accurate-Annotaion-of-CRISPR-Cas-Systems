@@ -4,11 +4,11 @@ from pathlib import Path
 
 def sort_fasta_by_subtype(input_fasta_path, output_dir_path):
     """
-    Sortiert Sequenzen aus einer FASTA-Datei nach Subtyp und schreibt für jeden Subtyp eine eigene Datei.
+    Sorts sequences from a FASTA file by subtype and writes separate files for each subtype.
     
     Args:
-        input_fasta_path (str or Path): Pfad zur Eingabe-FASTA-Datei.
-        output_dir_path (str or Path): Pfad zum Ausgabeordner.
+        input_fasta_path (str or Path): Path to the input FASTA file.
+        output_dir_path (str or Path): Path to the output directory.
     """
     input_fasta = Path(input_fasta_path)
     output_dir = Path(output_dir_path)
@@ -31,7 +31,6 @@ def sort_fasta_by_subtype(input_fasta_path, output_dir_path):
                 seq_lines = []
             else:
                 seq_lines.append(line)
-        # Letzte Sequenz
         if header and seq_lines:
             match = re.search(r"\|([^|]+)\|", header)
             if match:
