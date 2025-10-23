@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from Helper import format_fasta
-import annotate_Marcus
+from Annotater import annotate_Marcus
 from pathlib import Path
 import time
 import shutil

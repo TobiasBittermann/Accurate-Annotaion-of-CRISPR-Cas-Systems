@@ -5,7 +5,7 @@ from Helper import merge_fasta
 from Helper import filter_JSON
 from Helper import json_to_fasta
 from Helper import filter_JSON_FASTA
-import annotate_CRISPRCas_Atlas
+from Annotater import annotate_CRISPRCas_Atlas
 from pathlib import Path
 import time
 

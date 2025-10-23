@@ -2,7 +2,7 @@
 
 from Helper import format_fasta
 from Helper import merge_fasta
-import annotate_NCBI
+from Annotater import annotate_NCBI
 from pathlib import Path
 import time
 

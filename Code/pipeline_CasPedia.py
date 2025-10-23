@@ -3,7 +3,7 @@
 from Helper import format_fasta
 from Helper import merge_fasta
 from Helper import cas_translator
-import annotate_CasPedia
+from Annotater import annotate_CasPedia
 from pathlib import Path
 import time
 import shutil
